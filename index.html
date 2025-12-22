@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<link rel="icon" href="./image/icon.png" type="image/png">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <div class="logo-icon">
+            <img src="./image/mylogo.png" alt="Logo" />
+          </div>
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about " class="nav-link">
+              <i class="fa-solid fa-user"></i>
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">
+              <i class="fa-solid fa-layer-group"></i>
+              Projects
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#services" class="nav-link">
+              <i class="fa-solid fa-briefcase"></i>
+
+              Services
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">
+              <i class="fa-solid fa-envelope"></i>
+              contact
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- mobil menu -->
+
+      <div class="mobile-menu">
+        <a href="#home" class="mobile-nav-link">
+          <i class="fa-solid fa-house"></i>
+          Home
+        </a>
+        <a href="#about" class="mobile-nav-link">
+          <i class="fa-solid fa-user"></i>
+          About
+        </a>
+        <a href="#projects" class="mobile-nav-link">
+          <i class="fa-solid fa-layer-group"></i>
+          Projects
+        </a>
+
+        <a href="#services" class="nav-link">
+          <i class="fa-solid fa-briefcase"></i>
+
+          Services
+        </a>
+
+        <a href="#contact" class="mobile-nav-link">
+          <i class="fa-solid fa-house"></i>
+          Contact
+        </a>
+        <div class="mobile-actions">
+          <button class="theme-toggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <!-- <button class="btn btn-login">
+            <i class="fa-solid fa-sign-in-alt"></i>
+            login
+          </button>
+          <button class="btn btn-login">
+            <i class="fa-solis fa-user-plus"></i>
+            sign up
+          </button> -->
+        </div>
+      </div>
+    </nav>
+    <!-- hero -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hi, I'm sifen Edris</h1>
+            <h3 class="tagline">
+              Full-Stack Developer • UI Designer • Freelancer
+            </h3>
+
+            <p class="tex">
+              I build fast, modern, and user-focused web applications that make
+              an impact. As a full-stack developer, I turn ideas into clean,
+              functional digital products.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+
+            <div class="hero-icons">
+              <a
+                href="https://github.com/SifenEdris"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sifen-edris-42793b322/"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://twitter.com/sifan282"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="X (Twitter)"
+              >
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/sifen_282/"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="./image/webimg.png" alt="Hero Image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h2 class="abouth">About Me</h2>
+
+          <p>
+            Hi, I’m <strong>Sifen Edris</strong>, a Full-Stack Developer and
+            Designer focused on building fast, modern, and user-friendly web
+            applications. I enjoy solving problems and turning ideas into clean
+            digital solutions.
+          </p>
+
+          <ul class="about-list">
+            <li>Full-stack developer & designer</li>
+            <li>Clean UI and performance focused</li>
+            <li>Problem solver</li>
+          </ul>
+
+          <p class="collab">
+            I also contribute to open-source projects and collaborative design
+            work
+          </p>
+
+          <div class="hero-icons">
+            <a
+              href="https://github.com/SifenEdris"
+              class="icon"
+              target="_blank"
+              rel="noopener"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sifen-edris-42793b322/"
+              class="icon"
+              target="_blank"
+              rel="noopener"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://twitter.com/sifan282"
+              class="icon"
+              target="_blank"
+              rel="noopener"
+              title="X (Twitter)"
+            >
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <!-- <a
+ href="https://www.instagram.com/sifen_282/"
+ class="icon"
+ target="_blank"
+ rel="noopener"
+>
+ <i class="fab fa-instagram"></i>
+</a> -->
+          </div>
+          <button id="toggleAbout" class="btn-outline">View more</button>
+
+          <div id="aboutMore" class="about-more hidden">
+            <p>
+              I’m a full-stack web developer who builds fast, scalable, and
+              user-focused web applications. I work across both front-end and
+              back-end technologies to turn ideas into clean, polished digital
+              products.
+            </p>
+
+            <p>
+              My focus is on writing maintainable code, designing intuitive
+              interfaces, and delivering responsive experiences that perform
+              well across all devices. I enjoy solving real-world problems and
+              helping businesses grow through modern web solutions.
+            </p>
+
+            <ul class="about-list">
+              <li>Full-stack developer with strong UI/UX focus</li>
+              <li>Passionate about clean code and performance</li>
+              <li>Enjoys solving complex, real-world problems</li>
+            </ul>
+            <p class="extra">
+              I enjoy working on meaningful projects that balance performance,
+              usability, and clean design.
+            </p>
+          </div>
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+        <div class="about-image">
+          <img src="./image/image.png" alt="Sifen Edris" />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section dark">
+      <h2 class="skillh">My Skills</h2>
+
+      <div class="skills-container">
+        <!-- Frontend -->
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skills-grid">
+            <div class="skill-circle" data-skill="90">
+              <i class="fab fa-html5"></i>
+              <span>HTML</span>
+              <div class="percentage">90%</div>
+            </div>
+            <div class="skill-circle" data-skill="85">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS</span>
+              <div class="percentage">85%</div>
+            </div>
+            <div class="skill-circle" data-skill="80">
+              <i class="fab fa-js-square"></i>
+              <span>JavaScript</span>
+              <div class="percentage">80%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <div class="skills-grid">
+            <div class="skill-circle" data-skill="75">
+              <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
+              <div class="percentage">75%</div>
+            </div>
+            <div class="skill-circle" data-skill="70">
+              <i class="fab fa-php"></i>
+              <span>PHP</span>
+              <div class="percentage">70%</div>
+            </div>
+          </div>
+        </div>
+        <!-- Frameworks -->
+        <div class="skill-category">
+          <h3>Frameworks</h3>
+          <div class="skills-grid">
+            <div class="skill-circle" data-skill="85">
+              <i class="fab fa-react"></i>
+              <span>React</span>
+              <div class="percentage">80%</div>
+            </div>
+            <div class="skill-circle" data-skill="70">
+              <i class="fab fa-vuejs"></i>
+              <span>Vue.js</span>
+              <div class="percentage">65%</div>
+            </div>
+            <div class="skill-circle" data-skill="80">
+              <i class="fas fa-bold"></i>
+              <span>Bootstrap</span>
+              <div class="percentage">80%</div>
+            </div>
+          </div>
+        </div>
+        <!-- Design & Tools -->
+        <div class="skill-category">
+          <h3>Design & Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-circle" data-skill="85">
+              <i class="fas fa-pencil-ruler"></i>
+              <span>Figma</span>
+              <div class="percentage">85%</div>
+            </div>
+            <div class="skill-circle" data-skill="80">
+              <i class="fab fa-adobe"></i>
+              <span>Photoshop</span>
+              <div class="percentage">80%</div>
+            </div>
+            <div class="skill-circle" data-skill="90">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+              <div class="percentage">90%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="projects-container">
+        <h2 class="project-title">My project</h2>
+        <p class="projects-subtitle">
+          some of my recent work. for more projects visit my github profile.
+          Built with HTML, CSS, and JavaScript. Focused on performance,
+          animations, and clean UI.
+        </p>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              src="./image/ChatGPT Image Oct 16, 2025, 08_22_58 PM.png"
+              alt="portfolio"
+            />
+            <div class="project-content">
+              <h3>Graphic Design</h3>
+              <p>
+              A collection of my work showcasing creative graphic design and functional web development projects. Each project highlights my skills in UI/UX, branding, responsive web design, and interactive web applications.
+              </p>
+              <a href="https://github.com/SifenEdris/graphics.git" target="_blank" class="project-btn">View project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./image/image copy.png" alt="portfolio" />
+            <div class="project-content">
+              <h3>portfolio Website</h3>
+              <p>
+                A responsive portfolio website to showcase my work and skills.
+                Built with HTML, CSS, and JavaScript. Features a clean and
+                modern design, smooth animations, and easy navigation.
+              </p>
+              <a href="https://elhamportfolio.netlify.app/" target="_blank" class="project-btn">View project</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="./image/image copy 2.png" alt="portfolio" />
+            <div class="project-content">
+              <h3>portfolio website</h3>
+              <p>
+               A responsive portfolio website to showcase my work and skills.
+                Built with HTML, CSS, and JavaScript. Features a clean and
+                modern design, smooth animations, and easy navigation.
+              </p>
+              <a href="https://hayatcoderportfolio.netlify.app/?" target="_blank" class="project-btn">View project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./image/image copy 3.png" alt="portfolio" />
+            <div class="project-content">
+              <h3>Counter</h3>
+              <p>
+              counter is a simple web application that allows users to increment and decrement a numerical value. Built with HTML, CSS, and JavaScript, it features a clean interface and responsive design.
+              </p>
+              <a href="https://github.com/SifenEdris/DC" target="_blank" class="project-btn">View project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">My Services</h2>
+        <p class="section-subtitle">
+          I help brands and individuals build fast, modern, and visually
+          appealing digital products.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="icon">💻</div>
+            <h3>Web Development</h3>
+            <p>
+              Modern, responsive websites built with clean code, optimized
+              performance, and scalable architecture.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🎨</div>
+            <h3>UI / UX Design</h3>
+            <p>
+              User-centered interfaces designed for clarity, usability, and a
+              smooth digital experience.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🖌️</div>
+            <h3>Graphic Design</h3>
+            <p>
+              Creative designs including logos, banners, social media posts, and
+              marketing visuals that strengthen your brand.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🎬</div>
+            <h3>Video Editing</h3>
+            <p>
+              High-quality video edits crafted to boost engagement,
+              storytelling, and brand visibility.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">⚡</div>
+            <h3>Performance & SEO</h3>
+            <p>
+              Speed optimization, accessibility improvements, and SEO best
+              practices for better rankings.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🧩</div>
+            <h3>Branding & Identity</h3>
+            <p>
+              Consistent visual identity including colors, typography, and
+              layouts that make your brand memorable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="community" id="community">
+      <div class="community-container">
+        <h2 class="community-title">Join My Community</h2>
+        <p class="community-subtitle">
+          Connect with me on social media and stay updated on my latest
+          projects, tutorials, and more. 🚀 Available for freelance • Remote •
+          Open to collaboration
+        </p>
+        <div class="community-wrapper">
+          <button class="community-arrow left" aria-label="Scroll left">
+            ⬅️
+          </button>
+          <div class="community-grid">
+            <div class="community-card">
+              <a
+                href="https://github.com/SifenEdris"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <h3>GitHub</h3>
+              <p>
+                Explore my open-source projects, contributions, and coding
+                experiments. See how I build modern, clean, and interactive web
+                applications.
+              </p>
+              <a
+                href="https://github.com/SifenEdris"
+                target="_blank"
+                class="community-btn"
+                >Follow on GitHub →</a
+              >
+            </div>
+            <div class="community-card">
+              <a
+                href="https://www.linkedin.com/in/sifen-edris-42793b322/"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <h3>LinkedIn</h3>
+              <p>
+                Connect with me on LinkedIn to explore my professional journey,
+                web development projects, and design work. Let’s collaborate,
+                share insights, and grow together in tech
+              </p>
+              <a
+                href="https://www.linkedin.com/in/sifen-edris-42793b322/"
+                target="_blank"
+                class="community-btn"
+                >Connect →</a
+              >
+            </div>
+
+            <div class="community-card">
+              <a
+                href="https://twitter.com/sifan282"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="Twitter"
+              >
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <h3>Twitter</h3>
+              <p>
+                Join me on Twitter for updates, coding tips, design inspiration,
+                and tech discussions.
+              </p>
+              <a
+                href="https://twitter.com/sifan282"
+                target="_blank"
+                class="community-btn"
+                >Follow on Twitter →</a
+              >
+            </div>
+
+            <div class="community-card">
+              <a
+                href="https://www.instagram.com/sifen_282"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <h3>Instagram</h3>
+              <p>
+                See my design projects, behind-the-scenes work, and creative
+                content on Instagram.
+              </p>
+              <a
+                href="https://www.instagram.com/sifen_282"
+                target="_blank"
+                class="community-btn"
+                >Follow on Instagram →</a
+              >
+            </div>
+
+            <div class="community-card">
+              <a
+                href="https://www.youtube.com/@Sifan-zp4hh
+
+"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="YouTube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <h3>YouTube</h3>
+              <p>
+                Watch tutorials, coding projects, and creative tech content to
+                level up your skills.
+              </p>
+              <a
+                href="https://www.youtube.com/@Sifan-zp4hh"
+                target="_blank"
+                class="community-btn"
+                >Subscribe →</a
+              >
+            </div>
+
+            <div class="community-card">
+              <a
+                href="https://www.tiktok.com/@sifen_282"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="TikTok"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <h3>TikTok</h3>
+              <p>
+                Follow me for fun tech content, quick tips, and creative
+                coding/design snippets.
+              </p>
+              <a
+                href="https://www.tiktok.com/@sifen_282"
+                target="_blank"
+                class="community-btn"
+                >Follow →</a
+              >
+            </div>
+            <div class="community-card">
+              <a
+                href="https://t.me/pixel_stack4u"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="Telegram"
+              >
+                <i class="fab fa-telegram"></i>
+              </a>
+              <h3>Telegram</h3>
+              <p>
+                Join my Telegram channel for updates on web development, design
+                tips, coding tutorials, and tech discussions. Stay connected and
+                get valuable insights directly.
+              </p>
+              <a
+                href="https://t.me/pixel_stack4u"
+                target="_blank"
+                class="community-btn"
+                >Join →</a
+              >
+            </div>
+          </div>
+          <button class="community-arrow right" aria-label="Scroll right">
+            ➡️
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2 class="contact-title">Let's Work Together</h2>
+        <p class="contact-subtitle">
+          Have a project idea or just want to say hi? Reach out! 🚀
+        </p>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info-card">
+            <h3>Contact Info</h3>
+            <p>Feel free to reach out via email, phone, or social media.</p>
+
+            <div class="info-item">
+              <span class="icon">📍</span>
+              <p>Ethiopia</p>
+            </div>
+            <div class="info-item">
+              <span class="icon">✉️</span>
+              <p>sifan1819@gmail.com</p>
+            </div>
+            <div class="info-item">
+              <span class="icon">📞</span>
+              <p>+251 928 787 289</p>
+            </div>
+
+            <div class="social-link">
+              <a
+                href="https://github.com/SifenEdris"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sifen-edris-42793b322/"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://twitter.com/sifan282"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="Twitter"
+              >
+                <i class="fab fa-x-twitter"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/sifen_282"
+                class="icon"
+                target="_blank"
+                rel="noopener"
+                title="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h3>Send Me a Message</h3>
+            <form
+              id="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="c552dc28-56e6-4885-b7ce-8bb2d84342c1"
+              />
+
+              <div class="form-row">
+                <input
+                  class="inpt"
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  class="inpt"
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+
+              <textarea
+                class="inpt"
+                name="message"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+
+              <button type="submit" class="btn-gradient">Submit</button>
+            </form>
+
+            <p id="success-message">
+              ✅ Thank you! Your message has been sent successfully.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left -->
+        <div class="footer-about">
+          <h3>Sifen</h3>
+          <p>
+            I design and build modern, fast, and user-focused web experiences.
+          </p>
+          <p>
+            Full-stack developer & designer based in Ethiopia. I build clean
+            websites, brands, and digital experiences.
+          </p>
+        </div>
+
+        <!-- Middle -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#searvice">searvice</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right -->
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+            <a
+              href="https://github.com/SifenEdris"
+              class="icon"
+              target="_blank"
+              rel="noopener"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sifen-edris-42793b322/"
+              class="icon"
+              target="_blank"
+              rel="noopener"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://twitter.com/sifan282"
+              class="icon"
+              target="_blank"
+              rel="noopener"
+              title="Twitter"
+            >
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/sifen_282"
+              class="icon"
+              target="_blank"
+              rel="noopener"
+              title="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <!-- <a href="https://dribbble.com/" target="_blank"
+              ><i class="fab fa-dribbble"></i
+            ></a> -->
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-bottom">© 2025 Sifen Edris — All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
