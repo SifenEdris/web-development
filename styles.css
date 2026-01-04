@@ -226,13 +226,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   color: var(--light);
   touch-action: manipulation; /* mobile taps */
   transition: all 0.3s ease;
 }
-
-
 
 .hero {
   flex: 1;
@@ -247,8 +245,6 @@ header {
     rgba(20, 30, 48, 0.4),
     rgba(36, 59, 85, 0.1)
   );
-
-  
 }
 .hero-container {
   max-width: 1200px;
@@ -276,9 +272,6 @@ header {
   max-width: 550px;
   color: #cbd5e1; /* instead of muted gray */
   font-size: 1.1rem;
-
-
-
 }
 .hero-text {
   animation: fadeUp 0.9s ease forwards;
@@ -321,7 +314,6 @@ header {
   transition: all 0.3s ease;
 }
 
-
 /* Primary button */
 .btn-primary {
   background: linear-gradient(135deg, #3b82f6, #22d3ee);
@@ -333,7 +325,6 @@ header {
   transform: translateY(-2px);
   box-shadow: 0 15px 40px rgba(59, 130, 246, 0.55);
 }
-
 
 .btn-primary:hover {
   transform: translateY(-2px);
@@ -352,7 +343,6 @@ header {
   border-color: #3b82f6;
   color: #ffffff;
 }
-
 
 .btn-secondary:hover {
   transform: translateY(-2px);
@@ -744,17 +734,17 @@ header {
   box-shadow: 0 20px 40px rgba(0, 255, 255, 0.15);
 }
 
-.projects {
+/* .projects {
   padding: 80px 20px;
   color: var(--light);
   text-align: center;
   transition: var(--transition);
-}
+} */
 /* .ligh-mode .projects {
   background: var(--light);
   color: var(--dark);
 } */
-.project-title {
+/* .project-title {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 10px;
@@ -822,6 +812,145 @@ header {
 .project-btn:hover {
   text-decoration: underline;
   color: var(--primary);
+}
+
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: linear-gradient(135deg, #4f8cff, #38ef7d);
+  color: #000;
+}
+
+.project-card {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-card.hide {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+} */
+
+.projects {
+  padding: 80px 20px;
+  background: radial-gradient(circle at top, #0b1b33, #050b18);
+  color: #fff;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 48px;
+  color: #4fa3ff;
+  margin-bottom: 10px;
+}
+
+.projects-subtitle {
+  color: #9fb4d8;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: linear-gradient(135deg, #4fa3ff, #3cffb4);
+  color: #000;
+  border-color: transparent;
+  box-shadow: 0 8px 20px rgba(79, 163, 255, 0.4);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(79, 163, 255, 0.2);
+}
+
+.project-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-card h3 {
+  color: #6f7dff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #9fb4d8;
+}
+
+.project-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 12px;
+  background: #4fa3ff;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #3cffb4;
+  color: #000;
 }
 
 .services {
@@ -1622,9 +1751,9 @@ h2 {
   color: transparent;
 }
 .logo {
-  width: 50px;         /* adjust size */
-  height: 50px;        /* same as width for perfect circle */
-  border-radius: 50%;  /* makes it circular */
-  object-fit: cover;   /* ensures the image fills the circle */
-  display: block;      /* optional for alignment */
+  width: 50px; /* adjust size */
+  height: 50px; /* same as width for perfect circle */
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover; /* ensures the image fills the circle */
+  display: block; /* optional for alignment */
 }

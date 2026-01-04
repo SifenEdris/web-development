@@ -388,3 +388,78 @@ document.addEventListener('DOMContentLoaded', () => {
     mobilemenu.style.background = "rgba(226, 232, 240, 0.95)";
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("script.js loaded ✅");
+
+  const buttons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".project-card");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filter = button.dataset.filter;
+
+      cards.forEach(card => {
+        const categories = card.dataset.category;
+
+        if (filter === "all" || categories.includes(filter)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".project-card");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      // change active button
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filter = button.dataset.filter;
+
+      cards.forEach(card => {
+        const categories = card.dataset.category;
+
+        if (filter === "all" || categories.includes(filter)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".project-card");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filter = button.dataset.filter;
+
+      cards.forEach(card => {
+        // Split by comma and remove extra spaces
+        const categories = card.dataset.category.split(",").map(c => c.trim());
+
+        if (filter === "all" || categories.includes(filter)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+});

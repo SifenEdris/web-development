@@ -12,12 +12,41 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-<link rel="icon" href="./image/icon.png" type="image/png">
+    <link rel="icon" href="./image/icon.png" type="image/png" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const buttons = document.querySelectorAll(".filter-btn");
+        const cards = document.querySelectorAll(".project-card");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            // Remove active class from all buttons
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            const filter = button.dataset.filter;
+
+            cards.forEach((card) => {
+              // Split by comma and remove extra spaces
+              const categories = card.dataset.category
+                .split(",")
+                .map((c) => c.trim());
+
+              if (filter === "all" || categories.includes(filter)) {
+                card.style.display = "block";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        });
+      });
+    </script>
   </head>
   <body>
     <nav class="navbar">
@@ -366,7 +395,7 @@
       </div>
     </section>
 
-    <section class="projects" id="projects">
+    <!-- <section class="projects" id="projects">
       <div class="projects-container">
         <h2 class="project-title">My project</h2>
         <p class="projects-subtitle">
@@ -375,7 +404,7 @@
           animations, and clean UI.
         </p>
 
-        <div class="projects-grid">
+        <!-- <div class="projects-grid">
           <div class="project-card">
             <img
               src="./image/ChatGPT Image Oct 16, 2025, 08_22_58 PM.png"
@@ -389,7 +418,7 @@
               <a href="https://github.com/SifenEdris/graphics.git" target="_blank" class="project-btn">View project</a>
             </div>
           </div>
-          <!-- <div class="project-card">
+          <div class="project-card">
             <img src="./image/image copy.png" alt="portfolio" />
             <div class="project-content">
               <h3>portfolio Website</h3>
@@ -400,7 +429,7 @@
               </p>
               <a href="https://elhamportfolio.netlify.app/" target="_blank" class="project-btn">View project</a>
             </div>
-          </div> -->
+          </div>
 
           <div class="project-card">
             <img src="./image/image copy 2.png" alt="portfolio" />
@@ -424,6 +453,190 @@
               <a href="https://github.com/SifenEdris/DC" target="_blank" class="project-btn">View project</a>
             </div>
           </div>
+        </div> -->
+    <!-- <div class="project-filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="webdev">Web Dev</button>
+  <button class="filter-btn" data-filter="webdesign">Web Design</button>
+  <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+  <button class="filter-btn" data-filter="video">Video Editing</button>
+  <button class="filter-btn" data-filter="template">Templates / Collab</button>
+</div>
+<div class="projects-grid">
+  <div class="project-card" data-category="graphic">
+    <h3>Graphic Design</h3>
+    <p>Creative UI/UX and branding designs.</p>
+  </div>
+
+  <div class="project-card" data-category="webdev">
+    <h3>Portfolio Website</h3>
+    <p>HTML, CSS, JavaScript portfolio.</p>
+  </div>
+
+  <div class="project-card" data-category="webdev webdesign">
+    <h3>Counter App</h3>
+    <p>Simple JavaScript counter app.</p>
+  </div>
+
+  <div class="project-card" data-category="video">
+    <h3>Promo Video</h3>
+    <p>Edited with smooth transitions.</p>
+  </div>
+
+  <div class="project-card" data-category="template">
+    <h3>Landing Page Template</h3>
+    <p>Reusable modern UI template.</p>
+  </div>
+</div>
+
+     
+      </div>
+    </section>  -->
+
+    <section class="projects" id="projects">
+      <div class="projects-container">
+        <h2 class="project-title">My Projects</h2>
+        <p class="projects-subtitle">
+          Some of my recent work. For more projects visit my GitHub profile.
+          Built with HTML, CSS, and JavaScript. Focused on performance,
+          animations, and clean UI.
+        </p>
+
+        <!-- FILTER BUTTONS -->
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="webdev">
+            Web Development
+          </button>
+          <button class="filter-btn" data-filter="webdesign">Web Design</button>
+          <button class="filter-btn" data-filter="graphic">
+            Graphic Design
+          </button>
+          <button class="filter-btn" data-filter="video">Video Editing</button>
+          <button class="filter-btn" data-filter="collab">Collab</button>
+        </div>
+
+        <!-- PROJECTS GRID -->
+        <div class="projects-grid">
+          <!-- web dev -->
+          
+          <div class="project-card" data-category="webdev">
+            <img src="./image/webimg.png" alt="portfolio" />
+            <div class="project-content">
+              <h3>Persenal portfolio</h3>
+              <p>my personal portfolio</p>
+              <a
+                href="https://github.com/SifenEdris/web-development"
+                target="_blank"
+                class="project-btn"
+                >View project</a
+              >
+              
+            </div>
+          </div>
+          <div class="project-card" data-category="webdev">
+            <img src="./image/Screenshot_4-1-2026_182041_www.bing.com.jpeg" alt="portfolio" />
+            <div class="project-content">
+              <h3>Counter App</h3>
+              <p>Simple JavaScript counter app.</p>
+              <a
+                href="https://github.com/SifenEdris/DC"
+                target="_blank"
+                class="project-btn"
+                >View project</a
+              >
+            </div>
+          </div>
+          <!-- web design -->
+     <div class="project-card" data-category="webdesign">
+            <img src="./image/webdes.jpeg" alt="portfolio" />
+            <div class="project-content">
+              <h3>Counter App</h3>
+              <p>Simple JavaScript counter app.</p>
+              <a
+                href="https://sifen-portfolio.netlify.app/"
+                target="_blank"
+                class="project-btn"
+                >View project</a
+              >
+            </div>
+          </div>
+     <div class="project-card" data-category="webdesign">
+            <img src="./image/webg.jpeg" alt="portfolio" />
+            <div class="project-content">
+              <h3>Counter App</h3>
+              <p>Simple JavaScript counter app.</p>
+              <a
+                href="https://github.com/SifenEdris/graphics.git"
+                target="_blank"
+                class="project-btn"
+                >View project</a
+              >
+            </div>
+          </div>
+          <!-- Graphic Design -->
+          <div class="project-card" data-category="graphic">
+            <img
+              src="./image/ChatGPT Image Oct 16, 2025, 08_22_58 PM.png"
+              alt="portfolio"
+            />
+            <div class="project-content">
+              <h3>Graphic Design</h3>
+              <p>Creative graphic design and branding.</p>
+              <a
+                href="https://github.com/SifenEdris/graphics.git"
+                target="_blank"
+                class="project-btn"
+                >View project</a
+              >
+            </div>
+          </div>
+<!-- video -->
+          <!-- <div class="project-card" data-category="video">
+            <img src="./image/image copy 4.png" alt="portfolio" />
+            <div class="project-content">
+              <h3>Promo Video</h3>
+              <p>Edited with smooth transitions.</p>
+              <a
+                href="https://github.com/SifenEdris/video.git"
+                target="_blank"
+                class="project-btn"
+                >View project</a
+              >
+            </div>
+          </div> -->
+
+          <!-- Collab  -->
+          <div class="project-card" data-category="collab">
+            <img src="./image/image copy.png" alt="portfolio" />
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>Responsive HTML, CSS, JavaScript portfolio.</p>
+              <a
+                href="https://elhamportfolio.netlify.app/"
+                target="_blank"
+                class="project-btn"
+                >View project</a
+              >
+            </div>
+          </div>
+
+        
+          <div class="project-card" data-category="collab">
+            <img src="./image/image copy 2.png" alt="portfolio" />
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>Clean UI with smooth animations.</p>
+              <a
+                href="https://hayatcoderportfolio.netlify.app/"
+                target="_blank"
+                class="project-btn"
+                >View project</a
+              >
+            </div>
+          </div>
+
+         
         </div>
       </div>
     </section>
@@ -871,7 +1084,7 @@
       <p class="footer-bottom">© 2025 Sifen Edris — All Rights Reserved</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
